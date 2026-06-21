@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Simple Calculator With jQuery | ماشین حساب آنلاین جی‌کوئری</title>
+    <meta name="description" content="Online Simple Calculator With jQuery | ماشین حساب ساده آنلاین با جی کوئری و استایل مدرن"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/vazirmatn-font-face.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+
+    <style>
+        /* Developed by Amin Arjmand
+        Site: aminarjmand.com | GitHub: @sibche2013 
+        */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Vazirmatn', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #333333;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .board {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        #text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        .calc-inputs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            padding: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            font-family: inherit;
+            font-size: 1rem;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input {
+            width: 35%;
+        }
+
+        select {
+            width: 25%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input:focus, select:focus {
+            border-color: #2ecc71;
+            box-shadow: 0 0 8px rgba(46, 204, 113, 0.1);
+        }
+
+        .result {
+            background: rgba(46, 204, 113, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.2);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #27ae60;
+        }
+
+        .operator {
+            font-weight: 600;
+            color: #e74c3c;
+        }
+
+        .res {
+            font-weight: 600;
+        }
+
+        .backTo {
+            font-family: inherit;
+            font-size: 0.9rem;
+            padding: 10px 24px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 30px;
+            color: #555555;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .backTo:hover {
+            background: #2ecc71;
+            color: #ffffff;
+            border-color: #2ecc71;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+<div id="calculator" class="board">
+    <p id="text">Simple Online Calculator</p>
+    
+    <div class="calc-inputs">
+        <input type="number" id="x" name="x" placeholder="Num 1">
+        
+        <select name="calc" id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+        </select>
+        
+        <input type="number" id="y" name="y" placeholder="Num 2">
+    </div>
+
+    <div class="result">Result of <span class="operator">Plus</span> is : <span class="res">0</span></div>
+</div>
+
+<button class="backTo" onclick="history.back();">← Back To Previous Page</button>
+
+<script src="calculator.js"></script>
+</body>
+</html>
