@@ -1,11 +1,11 @@
 # 🧮 Simple Online Calculator | ماشین حساب آنلاین ساده
 
 <p align="center">
-  <a target="_blank" href="https://demo.aminarjmand.com/Online-Jquery-Calculator//123">
+  <a target="_blank" href="https://demo.aminarjmand.com/Online-Jquery-Calculator/">
     <img src="https://img.shields.io/badge/Live_Demo-⚡_Launch_Calculator-blue?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
   </a>
   &nbsp;&nbsp;
-  <a target="_blank" href="https://demo.aminarjmand.com/Online-Jquery-Calculator//123">
+  <a target="_blank" href="https://demo.aminarjmand.com/Online-Jquery-Calculator/">
     <img src="https://img.shields.io/badge/GitHub_Pages-Active-success?style=for-the-badge&logo=github" alt="GitHub Pages" />
   </a>
 </p>
@@ -22,7 +22,7 @@ A lightweight, secure, and fully responsive **web-based calculator** built using
 
 ### 🔗 Live Preview
 You can test the live version of this project here:  
-👉 **[Launch Live Demo](https://demo.aminarjmand.com/Online-Jquery-Calculator//123)**
+👉 **[Launch Live Demo](https://demo.aminarjmand.com/Online-Jquery-Calculator/)**
 
 ### ✨ Key Features
 - **Event-Driven UI:** Replaced resource-heavy processing loops with lightweight input event triggers.
@@ -39,7 +39,7 @@ You can test the live version of this project here:
 
 ### 🔗 مشاهده پیش‌نمایش زنده
 برای مشاهده و تست آنلاین این پروژه می‌توانید روی لینک زیر کلیک کنید:  
-👉 **[مشاهده دمو زنده پروژه](https://demo.aminarjmand.com/Online-Jquery-Calculator//123)**
+👉 **[مشاهده دمو زنده پروژه](https://demo.aminarjmand.com/Online-Jquery-Calculator/)**
 
 ### ✨ ویژگی‌های برجسته
 - **معماری بهینه و سبک:** حذف حلقه‌های پردازشی پرمصرف قدیمی و بازنویسی کد با تریگرهای رویداد ورودی جی‌کوئری.
